@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <base href="https://htmlacademy-htmlcss.github.io/2227957-sedona-37/2/">
+</head>
+  <body>
+    <header class="main-header">
+      <nav class="header-navigation">
+        <!-- Есть ли смысл делать ссылку на эту же страницу или удалить href? -->
+        <a href="index.html" class="header-logo">
+          <img src="" alt="Логотип города Седона.">
+        </a>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="index.html" class="navigation-link navigation-link-current">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">О седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a href="catalog.html" class="navigation-link">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">
+              <span class="visually-hidden">Избранное</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link button">Хочу сюда!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1 class="main-title">
+          <span class="visually-hidden">Седона</span>
+        </h1>
+        <img src="" class="hero-img" alt="Добро пожаловать в Седону.">
+        <!-- Обернула так все одинаково оформленные блоки -->
+        <div class="slogan">
+          <p class="slogan-lead">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
+      </section>
+      <section class="features">
+        <h2 class="section-title">
+          <span class="visually-hidden">Преимущества</span>
+        </h2>
+        <ul class="features-list">
+          <li class="features-item feature-with-img">
+            <h3 class="features-item-title">Настоящий городок</h3>
+            <p class="features-item-desc">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <img src="" class="feature-img" alt="Кафе на фоне растений и флагов.">
+          </li>
+          <li class="features-item">
+            <h3 class="features-item-title">Небольшая площадь</h3>
+            <p class="features-item-desc">Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="features-item">
+            <h3 class="features-item-title">Красивая дорога</h3>
+            <p class="features-item-desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="features-item">
+            <h3 class="features-item-title">Мало туристов</h3>
+            <p class="features-item-desc">Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+          <li class="features-item feature-with-img">
+            <h3 class="features-item-title">Там есть мост дьявола</h3>
+            <p class="features-item-desc">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <img src="" class="feature-img" alt="Вид на каньон.">
+          </li>
+        </ul>
+        <div class="slogan">
+          <p class="slogan-lead">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+          <p>Опытный персонал и качественное обслуживание!</p>
+        </div>
+        <ul class="attractions-list">
+          <li class="attractions-item">
+            <h3 class="attractions-item-title">Жильё</h3>
+            <p class="attractions-item-desc">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
+          </li>
+          <li class="attractions-item">
+            <h3 class="attractions-item-title">Еда</h3>
+            <p class="attractions-item-desc">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="attractions-item">
+            <h3 class="attractions-item-title">Сувениры</h3>
+            <p class="attractions-item-desc">Не только китайского, но и настоящего местного производства!</p>
+          </li>
+        </ul>
+      </section>
+      <section class="search">
+        <h2>
+          <span class="visually-hidden">Поиск гостиницы</span>
+        </h2>
+        <div class="slogan">
+          <p class="slogan-lead">Заинтересовались?</p>
+          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        </div>
+        <!-- Не знаю почему разный регистр букв, потом сделаю uppercase -->
+        <a class="button" href="catalog.html">ПОИСК ГОСТИНИЦЫ В седоне</a>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <!-- Видела в проверке дз что рассылку ставят в main, но в каталоге только оформление отличается -->
+      <section class="mailing">
+        <div class="slogan ">
+          <h2 class="slogan-lead">Подпишитесь на рассылку</h2>
+          <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        </div>
+        <form action="https://echo.htmlacademy.ru" class="mailing-form" method="get">
+          <input type="email" name="email" placeholder="Ваш e-mail" required>
+          <button type="submit">Подписаться</button>
+        </form>
+      </section>
+      <section class="contact">
+        <h2>
+          <span class="visually-hidden">Контакты</span>
+        </h2>
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="vk" href="https://vk.com/htmlacademy">
+              <img src="" alt="Логотип Вконтакте.">
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="telegram" href="https://t.me/htmlacademy">
+              <img src="" alt="Логотип Telegram.">
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <img src="" alt="Логотип YouTube.">
+            </a>
+          </li>
+        </ul>
+        <address>
+          <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </address>
+        <a class="html-academy-link">
+          <img src="" alt="Логотип HTML-Academy.">
+        </a>
+      </section>
+    </footer>
+  </body>
+</html>
