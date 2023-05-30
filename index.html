@@ -7,7 +7,6 @@
   <body>
     <header class="main-header">
       <nav class="header-navigation">
-        <!-- Есть ли смысл делать ссылку на эту же страницу или удалить href? -->
         <a href="index.html" class="header-logo">
           <img src="" alt="Логотип города Седона.">
         </a>
@@ -41,20 +40,14 @@
     </header>
     <main>
       <section class="hero">
-        <h1 class="main-title">
-          <span class="visually-hidden">Седона</span>
-        </h1>
+        <h1 class="main-title visually-hidden">Седона</h1>
         <img src="" class="hero-img" alt="Добро пожаловать в Седону.">
-        <!-- Обернула так все одинаково оформленные блоки -->
-        <div class="slogan">
-          <p class="slogan-lead">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-        </div>
       </section>
       <section class="features">
-        <h2 class="section-title">
-          <span class="visually-hidden">Преимущества</span>
-        </h2>
+        <div class="slogan">
+          <h2 class="section-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
         <ul class="features-list">
           <li class="features-item feature-with-img">
             <h3 class="features-item-title">Настоящий городок</h3>
@@ -79,8 +72,10 @@
             <img src="" class="feature-img" alt="Вид на каньон.">
           </li>
         </ul>
+      </section>
+      <section class="attractions">
         <div class="slogan">
-          <p class="slogan-lead">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+          <h2 class="section-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
           <p>Опытный персонал и качественное обслуживание!</p>
         </div>
         <ul class="attractions-list">
@@ -99,11 +94,8 @@
         </ul>
       </section>
       <section class="search">
-        <h2>
-          <span class="visually-hidden">Поиск гостиницы</span>
-        </h2>
         <div class="slogan">
-          <p class="slogan-lead">Заинтересовались?</p>
+          <h2 class="section-title">Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </div>
         <!-- Не знаю почему разный регистр букв, потом сделаю uppercase -->
@@ -111,10 +103,9 @@
       </section>
     </main>
     <footer class="page-footer">
-      <!-- Видела в проверке дз что рассылку ставят в main, но в каталоге только оформление отличается -->
       <section class="mailing">
         <div class="slogan ">
-          <h2 class="slogan-lead">Подпишитесь на рассылку</h2>
+          <h2 class="section-title">Подпишитесь на рассылку</h2>
           <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         </div>
         <form action="https://echo.htmlacademy.ru" class="mailing-form" method="get">
@@ -123,9 +114,7 @@
         </form>
       </section>
       <section class="contact">
-        <h2>
-          <span class="visually-hidden">Контакты</span>
-        </h2>
+        <h2 class="visually-hidden">Контакты</h2>
         <ul class="social-list">
           <li class="social-item">
             <a class="vk" href="https://vk.com/htmlacademy">

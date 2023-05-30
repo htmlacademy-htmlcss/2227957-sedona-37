@@ -107,15 +107,15 @@
         </select>
         <ul class="card-view-buttons">
           <li>
-            <button class="view-button table-view active">
+            <button type="button" class="view-button table-view active">
               <span class="visually-hidden">Таблица</span>
             </button>
             <li>
-              <button class="view-button big-card-view">
+              <button type="button" class="view-button big-card-view">
                 <span class="visually-hidden">Большие карточки</span>
               </button>
               <li>
-                <button class="view-button list-view">
+                <button type="button" class="view-button list-view">
                   <span class="visually-hidden">Список</span>
                 </button>
           </li>
@@ -129,11 +129,14 @@
               <span class="hotel-price">От 4000 ₽</span>
             </p>
             <p>
-              <button class="button button-more">подробнее</button>
-              <button class="button button-favourites">в избранное</button>
+              <!-- Поменяла кнопку на ссылку, тк скорее всего будет переход на страницу отеля -->
+              <a href="#" class="button button-more">подробнее</a>
+              <button type="button" class="button button-favourites">в избранное</button>
             </p>
-            <!-- Не считаю звезды контекстным изображением. Возможно ли потом сделать через before? -->
-            <p class="rating">Рейтинг: 8,5</p>
+            <p>
+              <img class="stars" src="" alt="4 звезды">
+              <span class="rating">Рейтинг: 8,5</span>
+            </p>
           </li>
           <li class="hotels-item">
             <img src="" alt="Каньон в вечерней дымке.">
@@ -143,11 +146,14 @@
               <span class="hotel-price">От 5000 ₽</span>
             </p>
             <p>
-              <button class="button button-more">подробнее</button>
-              <button class="button button-favourites active">в избранном</button>
+              <a href="#" class="button button-more">подробнее</a>
+              <button type="button" class="button button-favourites active">в избранном</button>
             </p>
-            <p class="rating">Рейтинг: 9,2</p>
-          </li>
+            <p>
+              <!-- Звезды сделаю одной картинкой, чтобы был понятный alt -->
+              <img class="stars" src="" alt="4 звезды">
+              <span class="rating">Рейтинг: 9,2</span>
+            </p>          </li>
           <li class="hotels-item">
             <img src="" alt="Дорога к каньону среди растений.">
             <h3>Desert Quail Inn</h3>
@@ -156,10 +162,13 @@
               <span class="hotel-price">От 2500 ₽</span>
             </p>
             <p>
-              <button class="button button-more">подробнее</button>
-              <button class="button button-favourites">в избранное</button>
+              <a href="#" class="button button-more">подробнее</a>
+              <button type="button" class="button button-favourites">в избранное</button>
             </p>
-            <p class="rating">Рейтинг: 6,9</p>
+            <p>
+              <img class="stars" src="" alt="3 звезды">
+              <span class="rating">Рейтинг: 6,9</span>
+            </p>
           </li>
           <li class="hotels-item">
             <img src="" alt="Каньон на фоне звездного неба, подсвеченный красным рассветом.">
@@ -169,10 +178,13 @@
               <span class="hotel-price">От 1500 ₽</span>
             </p>
             <p>
-              <button class="button button-more">подробнее</button>
-              <button class="button button-favourites">в избранное</button>
+              <a href="#" class="button button-more">подробнее</a>
+              <button type="button" class="button button-favourites">в избранное</button>
             </p>
-            <p class="rating">Рейтинг: 5,0</p>
+            <p>
+              <img class="stars" src="" alt="2 звезды">
+              <span class="rating">Рейтинг: 5,0</span>
+            </p>
           </li>
         </ul>
         <!-- А как скрыть часть кнопок, это будет позже? -->
@@ -212,8 +224,8 @@
     </main>
     <footer class="page-footer">
       <section class="mailing">
-        <div class="slogan ">
-          <h2 class="slogan-lead">Подпишитесь на рассылку</h2>
+        <div class="slogan">
+          <h2>Подпишитесь на рассылку</h2>
           <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         </div>
         <form action="https://echo.htmlacademy.ru" class="mailing-form">
