@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="icon" href="images/favicon.svg" type="image/png" sizes="32x32">
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
   </head>
   <body>
     <header class="main-header">
@@ -24,9 +24,9 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a href="#" class="navigation-link">
+            <button type="button" class="navigation-link">
               <span class="visually-hidden">Поиск</span>
-            </a>
+            </button>
           </li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">
@@ -34,7 +34,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a href="#" class="navigation-link button">Хочу сюда!</a>
+            <button type="button" class="navigation-link button">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
@@ -100,7 +100,8 @@
         </form>
       </header>
       <section class="hotels">
-        <h2>Найдено гостиниц: 38</h2>
+        <h2 class="visually-hidden">Список гостиниц</h2>
+        <b>Найдено гостиниц: 38</b>
         <select name="sorting">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
@@ -130,12 +131,10 @@
               <span class="hotel-price">От 4000 ₽</span>
             </p>
             <p>
-              <!-- Поменяла кнопку на ссылку, тк скорее всего будет переход на страницу отеля -->
               <a href="#" class="button button-more">подробнее</a>
               <button type="button" class="button button-favourites">в избранное</button>
             </p>
             <p>
-              <!-- Звезды сделаю одной картинкой, чтобы был понятный alt -->
               <img class="stars" src="images/4-stars.svg" alt="4 звезды." width="140" height="37">
               <span class="rating">Рейтинг: 8,5</span>
             </p>
@@ -188,7 +187,6 @@
             </p>
           </li>
         </ul>
-        <!-- А как скрыть часть кнопок, это будет позже? -->
         <ul class="pagination">
           <li class="pagination-item">
             <a href="#">1</a>
@@ -203,21 +201,24 @@
             <a href="#">4</a>
           </li>
           <li class="pagination-item">
+            <button type="button" class="pagination-more">...</button>
+          </li>
+          <li class="pagination-item visually-hidden">
             <a href="#">5</a>
           </li>
-          <li class="pagination-item">
+          <li class="pagination-item visually-hidden">
             <a href="#">6</a>
           </li>
-          <li class="pagination-item">
+          <li class="pagination-item visually-hidden">
             <a href="#">7</a>
           </li>
-          <li class="pagination-item">
+          <li class="pagination-item visually-hidden">
             <a href="#">8</a>
           </li>
-          <li class="pagination-item">
+          <li class="pagination-item visually-hidden">
             <a href="#">9</a>
           </li>
-          <li class="pagination-item">
+          <li class="pagination-item visually-hidden">
             <a href="#">10</a>
           </li>
         </ul>
