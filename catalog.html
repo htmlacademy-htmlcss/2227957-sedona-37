@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
   </head>
   <body>
@@ -34,7 +35,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <button type="button" class="navigation-link button">Хочу сюда!</button>
+            <button type="button" class="navigation-link button  brown-button">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
@@ -93,6 +94,8 @@
           </fieldset>
           <fieldset class="hotels-filter-group">
             <legend>Стоимость, ₽:</legend>
+            <input type="text" value="0">
+            <input type="text" value="9000">
             <!-- Ещё не прошли как делать -->
           </fieldset>
           <button class="button" type="submit">Применить</button>
@@ -101,7 +104,7 @@
       </header>
       <section class="hotels">
         <h2 class="visually-hidden">Список гостиниц</h2>
-        <b>Найдено гостиниц: 38</b>
+        <b class="filter-result">Найдено гостиниц: 38</b>
         <select name="sorting">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
@@ -124,102 +127,87 @@
         </ul>
         <ul class="hotels-list">
           <li class="hotels-item">
-            <img src="images/hotel-1.jpg" alt="Звездное небо между двух скал каньона." width="300" height="212">
+            <img src="images/hotels/hotel-1.jpg" alt="Звездное небо между двух скал каньона." width="300" height="212">
             <h3>Amara Resort & Spa</h3>
             <p>
               <span class="hotel-type">Гостиница</span>
               <span class="hotel-price">От 4000 ₽</span>
             </p>
             <p>
-              <a href="#" class="button button-more">подробнее</a>
+              <a href="#" class="button button-more brown-button">подробнее</a>
               <button type="button" class="button button-favourites">в избранное</button>
             </p>
             <p>
-              <img class="stars" src="images/4-stars.svg" alt="4 звезды." width="140" height="37">
+              <img class="stars" src="images/stars/4-stars.svg" alt="4 звезды." width="140" height="37">
               <span class="rating">Рейтинг: 8,5</span>
             </p>
           </li>
           <li class="hotels-item">
-            <img src="images/hotel-2.jpg" alt="Каньон в вечерней дымке." width="300" height="212">
+            <img src="images/hotels/hotel-2.jpg" alt="Каньон в вечерней дымке." width="300" height="212">
             <h3>Villas at Poco Diablo</h3>
             <p>
               <span class="hotel-type">Гостиница</span>
               <span class="hotel-price">От 5000 ₽</span>
             </p>
             <p>
-              <a href="#" class="button button-more">подробнее</a>
+              <a href="#" class="button button-more brown-button">подробнее</a>
               <button type="button" class="button button-favourites active">в избранном</button>
             </p>
             <p>
-              <img class="stars" src="images/4-stars.svg" alt="4 звезды." width="140" height="37">
+              <img class="stars" src="images/stars/4-stars.svg" alt="4 звезды." width="140" height="37">
               <span class="rating">Рейтинг: 9,2</span>
             </p>          </li>
           <li class="hotels-item">
-            <img src="images/hotel-3.jpg" alt="Дорога к каньону среди растений." width="300" height="212">
+            <img src="images/hotels/hotel-3.jpg" alt="Дорога к каньону среди растений." width="300" height="212">
             <h3>Desert Quail Inn</h3>
             <p>
               <span class="hotel-type">Гостиница</span>
               <span class="hotel-price">От 2500 ₽</span>
             </p>
             <p>
-              <a href="#" class="button button-more">подробнее</a>
+              <a href="#" class="button button-more brown-button">подробнее</a>
               <button type="button" class="button button-favourites">в избранное</button>
             </p>
             <p>
-              <img class="stars" src="images/3-stars.svg" alt="3 звезды." width="140" height="37">
+              <img class="stars" src="images/stars/3-stars.svg" alt="3 звезды." width="140" height="37">
               <span class="rating">Рейтинг: 6,9</span>
             </p>
           </li>
           <li class="hotels-item">
-            <img src="images/hotel-4.jpg" alt="Каньон на фоне звездного неба, подсвеченный красным рассветом." width="300" height="212">
+            <img src="images/hotels/hotel-4.jpg" alt="Каньон на фоне звездного неба, подсвеченный красным рассветом." width="300" height="212">
             <h3>GreenTree Inn</h3>
             <p>
               <span class="hotel-type">Гостиница</span>
               <span class="hotel-price">От 1500 ₽</span>
             </p>
             <p>
-              <a href="#" class="button button-more">подробнее</a>
+              <a href="#" class="button button-more brown-button">подробнее</a>
               <button type="button" class="button button-favourites">в избранное</button>
             </p>
             <p>
-              <img class="stars" src="images/2-stars.svg" alt="2 звезды." width="140" height="37">
+              <img class="stars" src="images/stars/2-stars.svg" alt="2 звезды." width="140" height="37">
               <span class="rating">Рейтинг: 5,0</span>
             </p>
           </li>
         </ul>
         <ul class="pagination">
           <li class="pagination-item">
-            <a href="#">1</a>
+            <a href="#" class="button">1</a>
           </li>
           <li class="pagination-item">
-            <a href="#">2</a>
+            <a href="#" class="button">2</a>
           </li>
           <li class="pagination-item">
-            <a href="#">3</a>
+            <a href="#" class="button">3</a>
           </li>
           <li class="pagination-item">
-            <a href="#">4</a>
+            <a href="#" class="button">4</a>
           </li>
           <li class="pagination-item">
-            <button type="button" class="pagination-more">...</button>
+            ...
           </li>
           <li class="pagination-item visually-hidden">
-            <a href="#">5</a>
-          </li>
-          <li class="pagination-item visually-hidden">
-            <a href="#">6</a>
-          </li>
-          <li class="pagination-item visually-hidden">
-            <a href="#">7</a>
-          </li>
-          <li class="pagination-item visually-hidden">
-            <a href="#">8</a>
-          </li>
-          <li class="pagination-item visually-hidden">
-            <a href="#">9</a>
-          </li>
-          <li class="pagination-item visually-hidden">
-            <a href="#">10</a>
+            <a href="#" class="button">10</a>
           </li>
         </ul>
       </section>
@@ -232,26 +220,20 @@
         </div>
         <form action="https://echo.htmlacademy.ru" class="mailing-form">
           <input type="email" name="email" placeholder="Ваш e-mail" required>
-          <button type="submit">Подписаться</button>
+          <button type="submit" class="button">Подписаться</button>
         </form>
       </section>
       <section class="contact">
         <h2 class="visually-hidden">Контакты</h2>
         <ul class="social-list">
           <li class="social-item">
-            <a class="vk" href="https://vk.com/htmlacademy">
-              <img src="images/social-vk.svg" alt="Логотип Вконтакте." width="24" height="14">
-            </a>
+            <a class="vk" href="https://vk.com/htmlacademy">Вконтакте</a>
           </li>
           <li class="social-item">
-            <a class="telegram" href="https://t.me/htmlacademy">
-              <img src="images/social-tg.svg" alt="Логотип Telegram." width="18" height="16">
-            </a>
+            <a class="telegram" href="https://t.me/htmlacademy">Телеграм</a>
           </li>
           <li class="social-item">
-            <a class="youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <img src="images/social-youtube.svg" alt="Логотип YouTube." width="22" height="17">
-            </a>
+            <a class="youtube" href="https://www.youtube.com/user/htmlacademyru">YouTube</a>
           </li>
         </ul>
         <address>
