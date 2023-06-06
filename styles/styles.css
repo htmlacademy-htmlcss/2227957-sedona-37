@@ -50,7 +50,7 @@ body {
 
 .hero {
   background-image: url(../images/hero-background.jpg);
-  background-position: no-repeat;
+  background-repeat: no-repeat;
   background-color: #719fad;
   background-size: 100% auto;
 }
@@ -104,7 +104,7 @@ body {
 .mailing-index {
   color: #ffffff;
   background-image: url(../images/index-mailing-background.jpg);
-  background-position: no-repeat;
+  background-repeat: no-repeat;
   background-color: #719fad;
   background-size: 100% auto;
 }
@@ -130,7 +130,7 @@ body {
 
 .inner-header {
   background-image: url(../images/catalog-inner-header-background.jpg);
-  background-position: no-repeat;
+  background-repeat: no-repeat;
   background-color: #719fad;
   background-size: 100% auto;
   color: #ffffff;
