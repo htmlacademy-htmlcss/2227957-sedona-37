@@ -130,6 +130,10 @@ body {
   line-height: 36px;
 }
 
+.social-list {
+  list-style: none;
+}
+
 .phone-number {
   font-size: 40px;
   line-height: 40px;
@@ -152,11 +156,19 @@ body {
   line-height: 78px;
 }
 
+.breadcrumbs {
+  list-style: none;
+}
+
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
   color: inherit;
   text-decoration: none;
+}
+
+.hotels-filter-list {
+  list-style: none;
 }
 
 .inner-header .button[type=reset] {
@@ -169,14 +181,29 @@ body {
   text-transform: uppercase;
 }
 
+.card-view-buttons {
+  list-style: none;
+}
+
+.hotels-list {
+  list-style: none;
+}
+
 .hotels-item h3 {
   font-size: 24px;
   line-height: 28px;
 }
 
-
 .button-favourites.active {
   background-color: #7DB54F;
+}
+
+.rating {
+  background-color: #F2F2F2;
+}
+
+.pagination-list {
+  list-style: none;
 }
 
 .pagination-item {
