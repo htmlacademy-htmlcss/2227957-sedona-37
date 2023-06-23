@@ -176,6 +176,7 @@ main {
   color: #ffffff;
   width: 1200px;
   display: flex;
+  align-items: center;
 }
 
 .features-item {
@@ -249,12 +250,19 @@ main {
   background-size: cover;
 }
 
+.mailing-form {
+  display: flex;
+  justify-content: center;
+}
+
 .mailing-form input {
   font-size: 18px;
   line-height: 24px;
   width: 452px;
   height: 52px;
-  padding: 0;
+  padding: 12px 20px;
+  background-color: #F2F2F2;
+  border: none;
 }
 
 .mailing-form .button {
@@ -326,6 +334,7 @@ main {
 .breadcrumbs {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
@@ -344,6 +353,7 @@ main {
   line-height: 21px;
   color: inherit;
   text-decoration: none;
+  display: block;
 }
 
 .hotels-filter {
@@ -355,6 +365,8 @@ main {
   padding: 0;
   margin: 0;
   margin-right: 70px;
+  display: flex;
+  flex-direction: column;
 }
 
 .hotels-filter-left {
@@ -390,6 +402,21 @@ main {
 
 .hotels-filter-right {
   width: 290px;
+}
+
+.hotels-filter-price-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotels-filter-price-input input {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  padding: 12px 20px;
+  background-color: #F2F2F2;
+  border: none;
+  width: 143px;
 }
 
 .hotels-filter-buttons {
@@ -450,8 +477,8 @@ main {
 
 .hotels-list {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   gap: 20px;
   margin: 0;
   padding: 0;
@@ -459,29 +486,29 @@ main {
 }
 
 .hotels-item {
-  width: 340px;
   padding: 19px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  grid-template-rows: 212px auto min-content min-content min-content;
+  gap: 16px 20px;
 }
 
 .hotels-photo {
   display: block;
-  margin-bottom: 16px;
+  grid-column: 1 / -1;
 }
 
 .hotels-item h3 {
   font-size: 24px;
   line-height: 28px;
   margin: 0;
-  margin-bottom: 16px;
+  grid-column: 1 / -1;
 }
 
-.hotels-item p {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  margin-bottom: 16px;
+.hotel-price {
+  justify-self: end;
 }
 
 .hotels-item .button {
@@ -496,7 +523,6 @@ main {
 .button-favourites.active {
   background-color: #7DB54F;
 }
-
 
 .rating {
   background-color: #F2F2F2;
