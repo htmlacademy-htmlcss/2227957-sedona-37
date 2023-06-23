@@ -498,6 +498,8 @@ main {
 .hotels-photo {
   display: block;
   grid-column: 1 / -1;
+  width: 300px;
+  object-fit: contain;
 }
 
 .hotels-item h3 {
