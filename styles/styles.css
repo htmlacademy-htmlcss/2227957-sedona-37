@@ -40,12 +40,17 @@ body {
 }
 
 .header-navigation {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  padding: 0 70px;
   display: flex;
 }
 
 .header-logo {
   width: 140px;
-  margin: 0 45px 0 70px;
+  margin: 0 45px 0 0;
+  display: block;
 }
 
 .navigation-list {
@@ -58,20 +63,29 @@ body {
 }
 
 .navigation-link {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
   color: inherit;
   text-decoration: none;
   display: block;
   padding: 20px 16px;
-  min-width: 20px;
+  cursor: pointer;
+  min-width: 40px;
+}
+
+.navigation-link-current {
+  text-decoration: underline;
+  text-decoration-color: #756257;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 20px;
+  text-underline-position: under;
 }
 
 .navigation-user {
   max-width: 400px;
   margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: end;
 }
 
 .visually-hidden {
@@ -86,7 +100,6 @@ body {
 }
 
 .button-search {
-  font-family: "PT Sans", sans-serif;
   border: none;
   background-color: transparent;
 }
@@ -97,15 +110,33 @@ body {
   line-height: 20px;
   font-weight: 700;
   color: #ffffff;
-  background-color: #82B3D3;
+  background-color: #83B3D3;
   text-transform: uppercase;
   border: none;
   text-decoration: none;
   display: inline-block;
   padding: 8px 50px;
+  border-radius: 4px;
+}
+
+.button:hover, .button:focus {
+  background-color: #68A2CA;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .brown-button {
+  background-color: #756157;
+}
+
+.brown-button:hover, .brown-button:focus {
+  background-color: #615048;
+}
+
+.brown-button:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #756157;
 }
 
@@ -197,6 +228,21 @@ main {
 
 .features-item-title {
   margin-bottom: 62px;
+  position: relative;
+}
+
+.features-item-title::before {
+  content: "";
+  position: absolute;
+  top: 86px;
+  left: 57px;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.features-with-img .features-item-title::before {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .features-item-desc, .advantages-item-desc {
@@ -211,10 +257,29 @@ main {
 
 .advantages-item {
   padding: 183px 85px 81px;
+  position: relative;
 }
 
 .advantages-item-title {
   margin-bottom: 30px;
+}
+
+.advantages-item:first-child {
+  background-image: url(../images/advantages/advantages-img-1.svg);
+  background-repeat: no-repeat;
+  background-position: center 80px;
+}
+
+.advantages-item:nth-child(2) {
+  background-image: url(../images/advantages/advantages-img-2.svg);
+  background-repeat: no-repeat;
+  background-position: center 80px;
+}
+
+.advantages-item:last-child {
+  background-image: url(../images/advantages/advantages-img-3.svg);
+  background-repeat: no-repeat;
+  background-position: center 80px;
 }
 
 .search {
@@ -268,6 +333,7 @@ main {
 .mailing-form .button {
   font-size: 20px;
   line-height: 36px;
+  border-radius: 0 4px 4px 0;
 }
 
 .contact {
@@ -295,6 +361,14 @@ main {
   align-items: center;
 }
 
+.social-link:hover path, .social-link:focus path {
+  fill: #68A2CA;
+}
+
+.social-link:active path {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
 .phone-number {
   font-size: 40px;
   line-height: 40px;
@@ -303,10 +377,26 @@ main {
   text-decoration: none;
 }
 
+.phone-number:hover, .phone-number:focus {
+  color: #756157;
+}
+
+.phone-number:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .html-academy-link {
   width: 150px;
   display: flex;
   align-items: center;
+}
+
+.html-academy-link:hover path, .html-academy-link:focus path {
+  fill: #756157;
+}
+
+.html-academy-link:active path {
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .inner-header {
