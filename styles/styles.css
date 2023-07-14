@@ -384,7 +384,7 @@ main {
 
 .mailing {
   text-align: center;
-  padding: 96px 0 104px;
+  padding: 96px 100px 104px;
 }
 
 .mailing .slogan {
@@ -406,7 +406,7 @@ main {
 }
 
 .mailing-form input {
-  font-family: inherit;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   width: 452px;
@@ -526,6 +526,7 @@ main {
   background-image: url(../images/modal-close-button.svg);
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
 .modal-close-button:hover {
@@ -583,18 +584,19 @@ main {
 .hotel-search-field {
   width: 100%;
   height: 48px;
-  font-family: inherit;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   background-color: #F2F2F2;
   border: none;
   border-radius: 4px;
-  padding: 12px 20px 12px 36px;
+  padding: 12px 45px 12px 20px;
 }
 
 .hotel-search-field:focus {
   outline: 3px solid #83B3D3;
+  z-index: 1;
 }
 
 .button-open-calendar {
@@ -666,6 +668,7 @@ main {
 
 .count-button:focus {
   outline: 3px solid #82B3D3;
+  z-index: 1;
 }
 
 .buttons-input-wrapper .hotel-search-field {
@@ -691,7 +694,8 @@ main {
   background-color: #83B3D3;
   border: none;
   border-radius: 50%;
-  top: 12px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 60px;
   background-image: url(../images/info.svg);
   background-repeat: no-repeat;
@@ -701,10 +705,12 @@ main {
 
 .tooltip-text {
   position: absolute;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  padding: 18px 22px;
+  text-align: left;
+  padding: 16px 20px;
   background-color: #333333;
   border-radius: 10px;
   min-width: 256px;
@@ -733,7 +739,7 @@ main {
 .hotel-search-button {
   background-color: #83B3D3;
   color: #ffffff;
-  font-family: inherit;
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -930,7 +936,7 @@ main {
 .hotels-filter-price-input {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 36px;
+  margin-bottom: 44px;
 }
 
 .price-input {
@@ -941,7 +947,7 @@ main {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  padding: 12px 20px;
+  padding: 12px 40px 12px 20px;
   background-color: #F2F2F2;
   border: none;
   width: 143px;
@@ -1003,13 +1009,19 @@ main {
   right: 0;
 }
 
+.range-toggle:hover {
+  box-shadow: 0 4px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
 .range-toggle:focus {
   outline: none;
   border: 3px solid #83B3D3;
+  box-shadow: 0 4px 5px 2px rgba(0, 0, 0, 0.25);
 }
 
 .range-toggle:active {
   outline: 2px solid #83B3D3;
+  box-shadow: 0 7px 7.5px 2px rgba(0, 0, 0, 0.4);
 }
 
 .hotels-filter-buttons {
