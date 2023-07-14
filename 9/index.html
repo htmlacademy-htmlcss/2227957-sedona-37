@@ -155,7 +155,10 @@
         </section>
       </footer>
     </div>
-    <div class="modal-container modal-container-open">
+
+<!-- Класс modal-container-open открывает модальное окно -->
+
+    <div class="modal-container">
       <div class="modal modal-hotel-search">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
@@ -184,8 +187,8 @@
                 <span class="hotel-search-inscription date-free">На эти даты есть свободные номера. Пока есть.</span>
               </label>
               <div class="one-line-two-fields-wrapper">
-                <label class="one-line-two-fields">
-                  <span class="hotel-search-title">Взрослые:</span>
+                <div class="one-line-two-fields">
+                  <label class="hotel-search-title" for="number-of-adults">Взрослые:</label>
                   <div class="buttons-input-wrapper">
                     <button type="button" class="count-button button-minus">
                       <span class="visually-hidden">Уменьшить</span>
@@ -193,7 +196,7 @@
                         <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
                       </svg>
                     </button>
-                    <input class="hotel-search-field" type="number" max="99" value="2">
+                    <input class="hotel-search-field" type="number" id="number-of-adults" max="99" value="2">
                     <button type="button" class="count-button button-plus">
                       <span class="visually-hidden">Увеличить</span>
                       <svg width="14" height="14" viewBox="0 0 14 14">
@@ -201,9 +204,9 @@
                       </svg>
                     </button>
                   </div>
-                </label>
-                <label class="one-line-two-fields">
-                  <span class="hotel-search-title">Дети:</span>
+                </div>
+                <div class="one-line-two-fields">
+                  <label class="hotel-search-title" for="number-of-children">Дети:</label>
                   <button class="info-tooltip" id="tooltip-kids">
                     <span class="tooltip-text" role="tooltip" id="tooltip-kids">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   </button>
@@ -214,7 +217,7 @@
                         <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
                       </svg>
                     </button>
-                    <input class="hotel-search-field" type="number" max="99" value="2">
+                    <input class="hotel-search-field" type="number" id="number-of-children" max="99" value="2">
                     <button type="button" class="count-button button-plus">
                       <span class="visually-hidden">Увеличить</span>
                       <svg width="14" height="14" viewBox="0 0 14 14">
@@ -222,7 +225,7 @@
                       </svg>
                     </button>
                   </div>
-                </label>
+                </div>
               </div>
               <button type="submit" class="button hotel-search-button">Нажать</button>
           </form>
