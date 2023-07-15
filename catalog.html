@@ -5,7 +5,6 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
-
     <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
   </head>
   <body>
@@ -60,7 +59,7 @@
                 <a class="breadcrumbs-link">Гостиницы</a>
               </li>
             </ul>
-            <form action="https://echo.htmlacademy.ru" method="get" class="hotels-filter">
+            <form action="https://echo.htmlacademy.ru" method="get" class="hotels-filter" data-test="filter">
               <fieldset class="hotels-filter-group hotels-filter-left">
                 <legend>Инфраструктура:</legend>
                 <ul class="hotels-filter-list">
@@ -145,7 +144,7 @@
             </form>
           </div>
         </header>
-        <section class="hotels">
+        <section class="hotels" data-test="catalog">
           <h2 class="visually-hidden">Список гостиниц</h2>
           <div class="hotels-user-buttons">
             <b class="filter-result">Найдено гостиниц: 38</b>
@@ -235,7 +234,7 @@
         </section>
       </main>
       <footer class="page-footer">
-        <section class="mailing">
+        <section class="mailing" data-test="subscribe">
           <div class="slogan">
             <h2 class="section-title">Подпишитесь на рассылку</h2>
             <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -245,7 +244,7 @@
             <button type="submit" class="button">Подписаться</button>
           </form>
         </section>
-        <section class="contact">
+        <section class="contact" data-test="footer">
           <h2 class="visually-hidden">Контакты</h2>
           <ul class="social-list">
             <li class="social-item">

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="32x32">
+  </head>
+  <body>
+    <div class="modal-container modal-container-open" data-test="modal">
+      <div class="modal modal-hotel-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="hotel-search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="one-line-one-field">
+                <label class="hotel-search-title" for="check-in-date">Дата Заезда:</label>
+                <div class="hotel-search-field-wrapper">
+                  <input class="hotel-search-field" type="text" name="check-in-date" id="check-in-date" placeholder="Укажите дату" value="27 апреля 2020">
+                  <button type="button" class="button-open-calendar">
+                    <span class="visually-hidden">Открыть календарь</span>
+                  </button>
+                </div>
+                <span class="hotel-search-inscription date-error">Мы не можем отправить вас в прошлое.</span>
+              </div>
+              <div class="one-line-one-field">
+                <label class="hotel-search-title" for="check-out-date">Дата Выезда:</label>
+                <div class="hotel-search-field-wrapper">
+                  <input class="hotel-search-field" type="text" name="check-out-date" id="check-out-date" placeholder="Укажите дату" value="1 сентября 2023">
+                  <button type="button" class="button-open-calendar">
+                    <span class="visually-hidden">Открыть календарь</span>
+                  </button>
+                </div>
+                <span class="hotel-search-inscription date-free">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
+              <div class="one-line-two-fields-wrapper">
+                <div class="one-line-two-fields">
+                  <label class="hotel-search-title" for="number-of-adults">Взрослые:</label>
+                  <div class="buttons-input-wrapper">
+                    <button type="button" class="count-button button-minus">
+                      <span class="visually-hidden">Уменьшить.</span>
+                      <svg role="img" width="14" height="2" viewBox="0 0 14 2">
+                        <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                      </svg>
+                    </button>
+                    <input class="hotel-search-field" type="number" id="number-of-adults" max="99" value="2">
+                    <button type="button" class="count-button button-plus">
+                      <span class="visually-hidden">Увеличить.</span>
+                      <svg role="img" width="14" height="14" viewBox="0 0 14 14">
+                        <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="one-line-two-fields">
+                  <div class="hotel-search-title hotel-search-title-tooltip">
+                    <label for="number-of-children">Дети:</label>
+                    <span class="tooltip">
+                      <button class="info-tooltip" aria-labelledby="tooltip-kids"></button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-kids">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    </span>
+                  </div>
+                  <div class="buttons-input-wrapper">
+                    <button type="button" class="count-button button-minus">
+                      <span class="visually-hidden">Уменьшить.</span>
+                      <svg role="img" width="14" height="2" viewBox="0 0 14 2">
+                        <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                      </svg>
+                    </button>
+                    <input class="hotel-search-field" type="number" id="number-of-children" max="99" value="2">
+                    <button type="button" class="count-button button-plus">
+                      <span class="visually-hidden">Увеличить.</span>
+                      <svg role="img" width="14" height="14" viewBox="0 0 14 14">
+                        <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="button hotel-search-button">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

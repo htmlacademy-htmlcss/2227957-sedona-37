@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="page-wrapper">
-      <header class="main-header">
+      <header class="main-header" data-test="header">
         <nav class="header-navigation">
           <a href="index.html" class="header-logo">
             <img src="images/logo.svg" alt="Логотип города Седона." width="140" height="70">
@@ -45,12 +45,12 @@
           </ul>
         </nav>
       </header>
-      <main>
-        <section class="hero">
+      <main data-test="main">
+        <section class="hero" data-test="hero">
           <h1 class="main-title visually-hidden">Седона</h1>
           <img src="images/hero-text.svg" class="hero-img" alt="Добро пожаловать в Седону." width="458" height="352">
         </section>
-        <section class="features">
+        <section class="features" data-test="advantages">
           <div class="slogan">
             <h2 class="section-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
             <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -84,7 +84,7 @@
             </li>
           </ul>
         </section>
-        <section class="advantages">
+        <section class="advantages" data-test="service">
           <div class="slogan">
             <h2 class="section-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
             <p>Опытный персонал и качественное обслуживание!</p>
@@ -104,7 +104,7 @@
             </li>
           </ul>
         </section>
-        <section class="search">
+        <section class="search" data-test="search">
           <div class="slogan">
             <h2 class="section-title">Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -113,7 +113,7 @@
         </section>
       </main>
       <footer class="page-footer">
-        <section class="mailing mailing-index">
+        <section class="mailing mailing-index" data-test="subscribe">
           <div class="slogan ">
             <h2 class="section-title">Подпишитесь на рассылку</h2>
             <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -123,7 +123,7 @@
             <button class="button" type="submit">Подписаться</button>
           </form>
         </section>
-        <section class="contact">
+        <section class="contact" data-test="footer">
           <h2 class="visually-hidden">Контакты</h2>
           <ul class="social-list">
             <li class="social-item">
