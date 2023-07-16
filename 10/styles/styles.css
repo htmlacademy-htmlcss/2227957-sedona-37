@@ -464,12 +464,14 @@ main {
 
 .contact address {
   max-width: 450px;
+  padding: 5px 0;
 }
 
 .phone-number {
   font-size: 40px;
   line-height: 40px;
   font-style: normal;
+  display: block;
   color: #000;
   text-decoration: none;
 }
@@ -1032,7 +1034,8 @@ main {
 .range-scale {
   position: relative;
   height: 4px;
-  background-color: rgb(255 255 255 / 30%)
+  background-color: rgb(255 255 255 / 30%);
+  margin: 8px 0;
 }
 
 .range-bar {
