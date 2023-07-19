@@ -26,7 +26,7 @@ body {
   height: 100%;
 }
 
-* {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -229,7 +229,7 @@ body {
   height: 57px;
   left: 0;
   bottom: 0;
-  background-image: url("../images/hero-img-bottom.png");
+  background-image: url("../images/hero-img-bottom.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1177,6 +1177,7 @@ body {
 }
 
 .view-button {
+  display: block;
   width: 48px;
   height: 48px;
   border: 2px solid #E5E5E5;
