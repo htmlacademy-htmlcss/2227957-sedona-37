@@ -204,7 +204,7 @@ body {
   margin-left: 20px;
 }
 
-main {
+.main {
   flex-grow: 1;
 }
 
